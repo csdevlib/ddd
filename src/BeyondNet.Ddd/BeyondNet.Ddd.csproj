@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>BeyondNet.Ddd</Title>
+    <Authors>$(AssemblyName)</Authors>
+    <Description>A simple library to implement Domain-Driven Design with .NET and C#</Description>
+    <Copyright>BeyondNet</Copyright>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/ddddevlib/beyondnet.ddd</RepositoryUrl>
+    <PackageTags>Ddd</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+    <AnalysisLevel>5.0-all</AnalysisLevel>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<AssemblyVersion>1.16.5</AssemblyVersion>
+	<VersionPrefix>1.16.5</VersionPrefix>
+	<BaseOutputPath>C:\MySources\net\libs</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BeyondNet.Factory" Version="1.1.0" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<AssemblyVersion>1.2.3</AssemblyVersion>
+	<VersionPrefix>1.2.3</VersionPrefix>
+	<Title>BeyondNet.Ddd.ValueObjects</Title>
+	<Copyright>BeyondNet</Copyright>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<BaseOutputPath>C:\MySources\net\libs</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\BeyondNet.Ddd\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BeyondNet.Ddd\BeyondNet.Ddd.csproj" />
+  </ItemGroup>
+
+</Project>
